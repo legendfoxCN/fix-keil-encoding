@@ -1,3 +1,13 @@
+> ## ⚠️⚠️⚠️⚠️⚠️ 重要警告 / IMPORTANT WARNING ⚠️⚠️⚠️⚠️⚠️
+>
+> **注意！！请在系统提示词 `CLAUDE.md` 中添加关于此 skill 的描述，否则 agent 不一定会调用这个 skill！！！**
+>
+> **NOTE!! Please add a description of this skill in the system prompt file `CLAUDE.md`, otherwise the agent may not invoke this skill!!!**
+>
+>
+>
+>.
+
 # GB2312 ↔ UTF-8 编码转换编辑 Skill
 
 被CC Bash工具产生的GB2312&UTF-8编码问题折磨的够呛，遂拷打大肥鱼撰写了一个skill，方便文件编辑。
@@ -13,7 +23,7 @@
 
 将上面“2. 将备份件（GB2312）……”中的备份文件丢回原目录
 
-具体的流程请查阅 `skill.md`。
+临时文件管理等具体流程请查阅 `skill.md`。
 
 ---
 
@@ -32,4 +42,4 @@ Rollback workflow:
 
 Simply copy the backup file from step 2 back to the original directory.
 
-For more detailed steps, refer to `skill.md`.
+For temp files management & more detailed steps, refer to `skill.md`.
