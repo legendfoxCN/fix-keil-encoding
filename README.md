@@ -12,12 +12,16 @@
 
 被CC Bash工具产生的GB2312&UTF-8编码问题折磨的够呛，遂拷打大肥鱼撰写了一个skill，方便文件编辑。
 
+这个skill能自行处理utf8编码与gb2312编码间的差异
+
 一般修改流程如下：
 
-1. 复制原始文件至临时文件夹（备份件）
-2. 将备份件（GB2312）另存为一个UTF8编码的文件
-3. 对UTF8文件进行编辑
-4. 将修改好的UTF8文件转码回GB2312，覆盖原始文件。
+1. 先询问用户ide的编码格式，
+如果用户编码格式与文件编码不一致，则执行如下流程：
+2. 复制原始文件至临时文件夹（备份件）
+3. 将备份件（GB2312）另存为一个UTF8编码的文件
+4. 对UTF8文件进行编辑
+5. 将修改好的UTF8文件转码回GB2312，覆盖原始文件。
 
 回滚流程：
 
@@ -33,10 +37,13 @@ Tired of being tortured by GB2312 and UTF-8 encoding issues caused by CC Bash to
 
 General modification workflow:
 
-1. Copy the original file to a temporary folder as a backup.
-2. Save the backup (GB2312) as a UTF-8 encoded file.
-3. Edit the UTF-8 file.
-4. Convert the edited UTF-8 file back to GB2312 and overwrite the original file.
+1. First, ask the user about the encoding format of their IDE.  
+   If the user's encoding format does not match the file's encoding, proceed with the following steps:
+
+2. Copy the original file to a temporary folder (as a backup).
+3. Save the backup file (GB2312) as a UTF-8 encoded file.
+4. Edit the UTF-8 file.
+5. Convert the modified UTF-8 file back to GB2312 and overwrite the original file.
 
 Rollback workflow:
 
